@@ -1,0 +1,4 @@
+AIA MYANMAR,AIA Monthly Wallet Listing
+No,Client ID,User Name,Transaction Type,Amount,Currency,Current Balance,Campaign Description,Campign Code,Transaction Date,Requested By,Result,Error Message
+1,20097740,Hsu Myat,Credit,500,MMK,1000,Cashback,"Q3 promotional campaign reward",11/24/2025,Pyae Thuta,Passed,
+2,20097740,Hsu Myat,Debit,500,MMK,1400,Cashback,"Q3 promotional campaign reward",11/24/2025,Pyae Thuta,Failed,

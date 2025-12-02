@@ -1,0 +1,4 @@
+Client ID,User Name,Transaction Type,Amount,Currency,Compign Description,Campaign Code,Transaction Date,Requested By,Effective Date,Expiration Date
+20097740,Hsu Myat,Credit,500,MMK,Cashback,Q3 promotional campaign reward,2025-11-24,Pyae Thuta,2025-11-24,2025-12-24
+20097740,Hsu Myat,Debit,200,MMK,Cashback,Q3 promotional campaign reward,2025-11-24,Pyae Thuta,2025-11-24,2025-12-24
+INVALID_USER,Bad User,UnknownType,100,MMK,Error,Test,2025-11-24,Admin,2025-11-24,2025-12-24

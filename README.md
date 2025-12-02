@@ -532,3 +532,1699 @@ Final Fantasy art and icons reused non-commercially under the
 [FINAL FANTASY® XIV Materials Usage License](https://support.na.square-enix.com/rule.php?id=5382).
 
 See the [LICENSE](LICENSE) file for more details about other bundled projects.
+
+```
+cactbot
+├─ 📁.github
+│  ├─ 📁ISSUE_TEMPLATE
+│  │  ├─ 📄01-bug_report.yml
+│  │  ├─ 📄02-question.yml
+│  │  ├─ 📄03-feature_request.yml
+│  │  └─ 📄config.yml
+│  ├─ 📁actions
+│  │  └─ 📁setup-js-env
+│  │     └─ 📄action.yml
+│  ├─ 📁matchers
+│  │  ├─ 📄markdownlint.json
+│  │  ├─ 📄msbuild.json
+│  │  ├─ 📄pylint.json
+│  │  └─ 📄stylelint.json
+│  ├─ 📁scripts
+│  │  ├─ 📄auto-label.cjs
+│  │  ├─ 📄lint-pr-title.cjs
+│  │  ├─ 📄lint-workflow.cjs
+│  │  ├─ 📄npm-package.cjs
+│  │  └─ 📄pr-review.cjs
+│  ├─ 📁workflows
+│  │  ├─ 📄README.md
+│  │  ├─ 📄build-artifact.yml
+│  │  ├─ 📄css-lint.yml
+│  │  ├─ 📄javascript-lint.yml
+│  │  ├─ 📄label-pr-review.yml
+│  │  ├─ 📄label-pr.yml
+│  │  ├─ 📄lint-pr-title.yaml
+│  │  ├─ 📄markdown-lint.yml
+│  │  ├─ 📄post-process.yml
+│  │  ├─ 📄release.yml
+│  │  ├─ 📄test-sync-files.yml
+│  │  ├─ 📄test-validate-versions.yml
+│  │  ├─ 📄test.yml
+│  │  ├─ 📄update-gh-pages.yml
+│  │  ├─ 📄update-triggers-branch.yml
+│  │  ├─ 📄update_logdefs.yml
+│  │  └─ 📄workflow-lint.yml
+│  ├─ 📄dependabot.yml
+│  └─ 📄logdef_update_pr_template.md
+├─ 📁.vscode
+│  ├─ 📄extensions.json
+│  └─ 📄settings.json
+├─ 📁docs
+│  ├─ 📁images
+│  │  ├─ 📄cheatengine_addresslist.png
+│  │  ├─ 📄cheatengine_browsememory.png
+│  │  ├─ 📄cheatengine_connected.png
+│  │  ├─ 📄cheatengine_debugger.png
+│  │  ├─ 📄cheatengine_debugger2.png
+│  │  ├─ 📄cheatengine_disassembly.png
+│  │  ├─ 📄cheatengine_disassembly2.png
+│  │  ├─ 📄cheatengine_found.png
+│  │  ├─ 📄cheatengine_initial.png
+│  │  ├─ 📄cheatengine_initialscan.png
+│  │  ├─ 📄cheatengine_pointer.png
+│  │  ├─ 📄cheatengine_postscan.png
+│  │  ├─ 📄cheatengine_signature_scan.png
+│  │  ├─ 📄cheatengine_tracing.png
+│  │  ├─ 📄cheatengine_tracing2.png
+│  │  ├─ 📄logguide_dumpnetworkdata.png
+│  │  ├─ 📄logguide_ffxivmon.png
+│  │  ├─ 📄logguide_ffxivmon_import.png
+│  │  ├─ 📄logguide_import.png
+│  │  ├─ 📄logguide_includehp.png
+│  │  ├─ 📄logguide_networkdata.png
+│  │  ├─ 📄logguide_viewlogs.png
+│  │  ├─ 📄newpatch_testoverlay.png
+│  │  ├─ 📄remote_devtools.png
+│  │  ├─ 📄remote_itworks.png
+│  │  ├─ 📄remote_playerselect.png
+│  │  ├─ 📄remote_testui.png
+│  │  ├─ 📄remote_wsserver.png
+│  │  ├─ 📄timelineguide_copy.png
+│  │  ├─ 📄timelineguide_encounterlogs.png
+│  │  ├─ 📄timelineguide_timeline.png
+│  │  ├─ 📄troubleshooting_chatlogfilter.png
+│  │  ├─ 📄troubleshooting_hidechatlog.png
+│  │  ├─ 📄troubleshooting_networklog.png
+│  │  ├─ 📄troubleshooting_openlogfolder.png
+│  │  ├─ 📄vfxeditor_initial.png
+│  │  ├─ 📄vfxeditor_loaded.png
+│  │  ├─ 📄vfxeditor_replace.png
+│  │  └─ 📄vfxeditor_result.png
+│  ├─ 📁ko-KR
+│  │  ├─ 📄CactbotCustomization.md
+│  │  └─ 📄README.md
+│  ├─ 📁logs
+│  │  └─ 📄TheAbyssalFractureExtreme.log
+│  ├─ 📁zh-CN
+│  │  ├─ 📄CactbotCustomization.md
+│  │  ├─ 📄MemorySignatures.md
+│  │  ├─ 📄README.md
+│  │  ├─ 📄RaidbossGuide.md
+│  │  └─ 📄TimelineGuide.md
+│  ├─ 📁zh-TW
+│  │  └─ 📄CactbotCustomization.md
+│  ├─ 📄CactbotCustomization.md
+│  ├─ 📄FAQ-Troubleshooting.md
+│  ├─ 📄Headmarkers.md
+│  ├─ 📄LogGuide.md
+│  ├─ 📄MemorySignatures.md
+│  ├─ 📄OopsyraidsyGuide.md
+│  ├─ 📄PatchUpdateChecklist.md
+│  ├─ 📄RaidbossGuide.md
+│  ├─ 📄RemoteCactbot.md
+│  └─ 📄TimelineGuide.md
+├─ 📁eslint
+│  ├─ 📄cactbot-locale-order.js
+│  ├─ 📄cactbot-output-strings.js
+│  ├─ 📄cactbot-response-default-severities.js
+│  ├─ 📄cactbot-timeline-triggers.js
+│  ├─ 📄cactbot-trigger-property-order.js
+│  ├─ 📄cactbot-triggerset-property-order.js
+│  ├─ 📄eslint-utils.js
+│  └─ 📄package.json
+├─ 📁plugin
+│  ├─ 📁CactbotEventSource
+│  │  ├─ 📁Properties
+│  │  │  └─ 📄AssemblyInfo.cs
+│  │  ├─ 📁loc
+│  │  │  ├─ 📄Strings.Designer.cs
+│  │  │  ├─ 📄Strings.resx
+│  │  │  └─ 📄Strings.zh.resx
+│  │  ├─ 📄CactbotEventSource.cs
+│  │  ├─ 📄CactbotEventSource.csproj
+│  │  ├─ 📄CactbotEventSourceConfig.cs
+│  │  ├─ 📄CactbotPathWarning.cs
+│  │  ├─ 📄FFXIVPlugin.cs
+│  │  ├─ 📄FFXIVProcess.cs
+│  │  ├─ 📄FFXIVProcessCn.cs
+│  │  ├─ 📄FFXIVProcessIntl.cs
+│  │  ├─ 📄FFXIVProcessKo.cs
+│  │  ├─ 📄JSEvents.cs
+│  │  ├─ 📄NativeMethods.cs
+│  │  └─ 📄VersionChecker.cs
+│  ├─ 📁CactbotOverlay
+│  │  ├─ 📁Properties
+│  │  │  └─ 📄AssemblyInfo.cs
+│  │  ├─ 📁loc
+│  │  │  ├─ 📄Strings.Designer.cs
+│  │  │  ├─ 📄Strings.resx
+│  │  │  └─ 📄Strings.zh.resx
+│  │  ├─ 📄AssemblyResolver.cs
+│  │  ├─ 📄CactbotOverlay.csproj
+│  │  └─ 📄PluginLoader.cs
+│  ├─ 📁ThirdParty
+│  └─ 📄Cactbot.sln
+├─ 📁resources
+│  ├─ 📁ffxiv
+│  │  ├─ 📁jobs
+│  │  │  ├─ 📄acn.png
+│  │  │  ├─ 📄alc.png
+│  │  │  ├─ 📄arc.png
+│  │  │  ├─ 📄arm.png
+│  │  │  ├─ 📄ast-framed.png
+│  │  │  ├─ 📄ast-large.png
+│  │  │  ├─ 📄ast.png
+│  │  │  ├─ 📄blm-framed.png
+│  │  │  ├─ 📄blm-large.png
+│  │  │  ├─ 📄blm.png
+│  │  │  ├─ 📄blu-framed.png
+│  │  │  ├─ 📄blu-large.png
+│  │  │  ├─ 📄blu.png
+│  │  │  ├─ 📄bot.png
+│  │  │  ├─ 📄brd-framed.png
+│  │  │  ├─ 📄brd-large.png
+│  │  │  ├─ 📄brd.png
+│  │  │  ├─ 📄bsm.png
+│  │  │  ├─ 📄cho.png
+│  │  │  ├─ 📄cnj.png
+│  │  │  ├─ 📄crp.png
+│  │  │  ├─ 📄cul.png
+│  │  │  ├─ 📄dnc-framed.png
+│  │  │  ├─ 📄dnc-large.png
+│  │  │  ├─ 📄dnc.png
+│  │  │  ├─ 📄drg-framed.png
+│  │  │  ├─ 📄drg-large.png
+│  │  │  ├─ 📄drg.png
+│  │  │  ├─ 📄drk-framed.png
+│  │  │  ├─ 📄drk-large.png
+│  │  │  ├─ 📄drk.png
+│  │  │  ├─ 📄fsh.png
+│  │  │  ├─ 📄gla.png
+│  │  │  ├─ 📄gnb-framed.png
+│  │  │  ├─ 📄gnb-large.png
+│  │  │  ├─ 📄gnb.png
+│  │  │  ├─ 📄gsm.png
+│  │  │  ├─ 📄limit break.png
+│  │  │  ├─ 📄lnc.png
+│  │  │  ├─ 📄ltw.png
+│  │  │  ├─ 📄mch-framed.png
+│  │  │  ├─ 📄mch-large.png
+│  │  │  ├─ 📄mch.png
+│  │  │  ├─ 📄min.png
+│  │  │  ├─ 📄mnk-framed.png
+│  │  │  ├─ 📄mnk-large.png
+│  │  │  ├─ 📄mnk.png
+│  │  │  ├─ 📄mrd.png
+│  │  │  ├─ 📄nin-framed.png
+│  │  │  ├─ 📄nin-large.png
+│  │  │  ├─ 📄nin.png
+│  │  │  ├─ 📄pct-framed.png
+│  │  │  ├─ 📄pct-large.png
+│  │  │  ├─ 📄pct.png
+│  │  │  ├─ 📄pet.png
+│  │  │  ├─ 📄pgl.png
+│  │  │  ├─ 📄pld-framed.png
+│  │  │  ├─ 📄pld-large.png
+│  │  │  ├─ 📄pld.png
+│  │  │  ├─ 📄rdm-framed.png
+│  │  │  ├─ 📄rdm-large.png
+│  │  │  ├─ 📄rdm.png
+│  │  │  ├─ 📄rog.png
+│  │  │  ├─ 📄rpr-framed.png
+│  │  │  ├─ 📄rpr-large.png
+│  │  │  ├─ 📄rpr.png
+│  │  │  ├─ 📄sam-framed.png
+│  │  │  ├─ 📄sam-large.png
+│  │  │  ├─ 📄sam.png
+│  │  │  ├─ 📄sch-framed.png
+│  │  │  ├─ 📄sch-large.png
+│  │  │  ├─ 📄sch.png
+│  │  │  ├─ 📄sge-framed.png
+│  │  │  ├─ 📄sge-large.png
+│  │  │  ├─ 📄sge.png
+│  │  │  ├─ 📄smn-framed.png
+│  │  │  ├─ 📄smn-large.png
+│  │  │  ├─ 📄smn.png
+│  │  │  ├─ 📄thm.png
+│  │  │  ├─ 📄vpr-framed.png
+│  │  │  ├─ 📄vpr-large.png
+│  │  │  ├─ 📄vpr.png
+│  │  │  ├─ 📄war-framed.png
+│  │  │  ├─ 📄war-large.png
+│  │  │  ├─ 📄war.png
+│  │  │  ├─ 📄whm-framed.png
+│  │  │  ├─ 📄whm-large.png
+│  │  │  ├─ 📄whm.png
+│  │  │  └─ 📄wvr.png
+│  │  ├─ 📁status
+│  │  │  ├─ 📄arcane-circle.png
+│  │  │  ├─ 📄arrow.png
+│  │  │  ├─ 📄astral.png
+│  │  │  ├─ 📄balance.png
+│  │  │  ├─ 📄battle-litany.png
+│  │  │  ├─ 📄battlevoice.png
+│  │  │  ├─ 📄bole.png
+│  │  │  ├─ 📄brotherhood.png
+│  │  │  ├─ 📄chain-stratagem.png
+│  │  │  ├─ 📄contagion.png
+│  │  │  ├─ 📄devilment.png
+│  │  │  ├─ 📄devotion.png
+│  │  │  ├─ 📄divination.png
+│  │  │  ├─ 📄dokumori.png
+│  │  │  ├─ 📄dragon-sight.png
+│  │  │  ├─ 📄earth.png
+│  │  │  ├─ 📄embolden.png
+│  │  │  ├─ 📄ewer.png
+│  │  │  ├─ 📄fire.png
+│  │  │  ├─ 📄foes-requiem.png
+│  │  │  ├─ 📄food.png
+│  │  │  ├─ 📄hypercharge.png
+│  │  │  ├─ 📄ice.png
+│  │  │  ├─ 📄lady-of-crowns.png
+│  │  │  ├─ 📄lightning.png
+│  │  │  ├─ 📄lord-of-crowns.png
+│  │  │  ├─ 📄mug.png
+│  │  │  ├─ 📄offguard.png
+│  │  │  ├─ 📄peculiar-light.png
+│  │  │  ├─ 📄physical.png
+│  │  │  ├─ 📄potion.png
+│  │  │  ├─ 📄radiant-finale.png
+│  │  │  ├─ 📄searing-light-6.0.png
+│  │  │  ├─ 📄searing-light.png
+│  │  │  ├─ 📄spear.png
+│  │  │  ├─ 📄spire.png
+│  │  │  ├─ 📄standard-finish.png
+│  │  │  ├─ 📄starry-muse.png
+│  │  │  ├─ 📄technical-finish.png
+│  │  │  ├─ 📄trick-attack.png
+│  │  │  ├─ 📄umbral.png
+│  │  │  ├─ 📄water.png
+│  │  │  └─ 📄wind.png
+│  │  └─ 📄LICENSE.txt
+│  ├─ 📁images
+│  │  └─ 📄06ew_raid_p12s_classic2_noflip.webp
+│  ├─ 📁sounds
+│  │  ├─ 📁BigWigs
+│  │  │  ├─ 📄Alarm.webm
+│  │  │  ├─ 📄Alert.webm
+│  │  │  ├─ 📄Info.webm
+│  │  │  ├─ 📄Long.webm
+│  │  │  └─ 📄license.txt
+│  │  ├─ 📁Overwatch
+│  │  │  ├─ 📄D.Va_-_Boosters_engaged.webm
+│  │  │  ├─ 📄D.Va_-_Game_on.webm
+│  │  │  ├─ 📄Hanzo_-_Sake.webm
+│  │  │  ├─ 📄LICENSE.txt
+│  │  │  └─ 📄Reaper_-_Die_die_die.webm
+│  │  └─ 📁freesound
+│  │     ├─ 📁amy
+│  │     │  ├─ 📄1.webm
+│  │     │  ├─ 📄10.webm
+│  │     │  ├─ 📄2.webm
+│  │     │  ├─ 📄3.webm
+│  │     │  ├─ 📄4.webm
+│  │     │  ├─ 📄5.webm
+│  │     │  ├─ 📄6.webm
+│  │     │  ├─ 📄7.webm
+│  │     │  ├─ 📄8.webm
+│  │     │  └─ 📄9.webm
+│  │     ├─ 📄LICENSE.txt
+│  │     ├─ 📄alarm.webm
+│  │     ├─ 📄percussion_hit.webm
+│  │     ├─ 📄power_up.webm
+│  │     ├─ 📄sonar.webm
+│  │     └─ 📄water_drop.webm
+│  ├─ 📄conditions.ts
+│  ├─ 📄content_list.ts
+│  ├─ 📄content_type.ts
+│  ├─ 📄datetime.ts
+│  ├─ 📄defaults.css
+│  ├─ 📄effect_id.ts
+│  ├─ 📄hunt.ts
+│  ├─ 📄languages.ts
+│  ├─ 📄netlog_defs.ts
+│  ├─ 📄netregexes.ts
+│  ├─ 📄not_reached.ts
+│  ├─ 📄outputs.ts
+│  ├─ 📄overlay_plugin_api.ts
+│  ├─ 📄party.ts
+│  ├─ 📄pet_names.ts
+│  ├─ 📄player_override.ts
+│  ├─ 📄regexes.ts
+│  ├─ 📄resourcebar.ts
+│  ├─ 📄responses.ts
+│  ├─ 📄stringhandlers.ts
+│  ├─ 📄timerbar.ts
+│  ├─ 📄timerbox.ts
+│  ├─ 📄timericon.ts
+│  ├─ 📄translations.ts
+│  ├─ 📄user_config.ts
+│  ├─ 📄util.ts
+│  ├─ 📄weather.ts
+│  ├─ 📄weather_rate.ts
+│  ├─ 📄widget_list.ts
+│  ├─ 📄world_id.ts
+│  ├─ 📄zone_id.ts
+│  └─ 📄zone_info.ts
+├─ 📁screenshots
+│  ├─ 📄Jobs.png
+│  ├─ 📄Raidboss.png
+│  ├─ 📄cactbot-logo-320x320.png
+│  ├─ 📄config_panel.png
+│  ├─ 📄ffxiv_plugin_parsing_plugin.png
+│  ├─ 📄ffxiv_plugin_show_startup_wizard.png
+│  ├─ 📄fishing.png
+│  ├─ 📄get_plugins_blank.png
+│  ├─ 📄get_plugins_cactbot.png
+│  ├─ 📄get_plugins_complete.png
+│  ├─ 📄get_plugins_overlayplugin.png
+│  ├─ 📄overlay_plugin_new.png
+│  ├─ 📄overlay_plugin_new_raidboss_locked.png
+│  ├─ 📄overlay_plugin_new_raidboss_unlocked.png
+│  ├─ 📄promo_eureka.png
+│  ├─ 📄promo_fishing.png
+│  ├─ 📄promo_jobs.png
+│  ├─ 📄promo_oopsy.png
+│  ├─ 📄promo_radar.png
+│  ├─ 📄promo_raidboss_timeline.png
+│  ├─ 📄promo_raidboss_triggers.png
+│  ├─ 📄pullcounter.png
+│  ├─ 📄raidboss_emulator.png
+│  ├─ 📄rdmty.png
+│  ├─ 📄test.png
+│  └─ 📄xephero.png
+├─ 📁test
+│  ├─ 📁helper
+│  │  ├─ 📄example_log_lines_test_data.ts
+│  │  ├─ 📄regex_util.ts
+│  │  ├─ 📄test_data_runner.ts
+│  │  ├─ 📄test_oopsy.ts
+│  │  ├─ 📄test_timeline.ts
+│  │  └─ 📄test_trigger.ts
+│  ├─ 📁unittests
+│  │  ├─ 📄compile_test.ts
+│  │  ├─ 📄config_test.ts
+│  │  ├─ 📄csv_util_test.ts
+│  │  ├─ 📄netregex_test.ts
+│  │  ├─ 📄regex_test.ts
+│  │  ├─ 📄resources_test.ts
+│  │  ├─ 📄responses_test.ts
+│  │  └─ 📄util_test.ts
+│  └─ 📄test_data_files.ts
+├─ 📁types
+│  ├─ 📄data.d.ts
+│  ├─ 📄event.d.ts
+│  ├─ 📄images.d.ts
+│  ├─ 📄job.d.ts
+│  ├─ 📄manifest.d.ts
+│  ├─ 📄net_fields.d.ts
+│  ├─ 📄net_matches.d.ts
+│  ├─ 📄net_props.d.ts
+│  ├─ 📄net_trigger.d.ts
+│  ├─ 📄oopsy.d.ts
+│  ├─ 📄party.d.ts
+│  ├─ 📄trigger.d.ts
+│  └─ 📄worker.d.ts
+├─ 📁ui
+│  ├─ 📁config
+│  │  ├─ 📄config.css
+│  │  ├─ 📄config.html
+│  │  ├─ 📄config.ts
+│  │  ├─ 📄config_options.ts
+│  │  └─ 📄general_config.ts
+│  ├─ 📁dps
+│  │  ├─ 📁rdmty
+│  │  │  ├─ 📄README.txt
+│  │  │  ├─ 📄dps.css
+│  │  │  ├─ 📄dps.html
+│  │  │  └─ 📄dps.js
+│  │  ├─ 📁xephero
+│  │  │  ├─ 📄dps_phase_tracker.js
+│  │  │  ├─ 📄xephero-cactbot.html
+│  │  │  ├─ 📄xephero.css
+│  │  │  └─ 📄xephero.js
+│  │  └─ 📄dps_common.js
+│  ├─ 📁eureka
+│  │  ├─ 📄anemos.png
+│  │  ├─ 📄bozjasouthern.png
+│  │  ├─ 📄eureka.css
+│  │  ├─ 📄eureka.html
+│  │  ├─ 📄eureka.ts
+│  │  ├─ 📄eureka_config.ts
+│  │  ├─ 📄eureka_options.ts
+│  │  ├─ 📄eureka_translations.ts
+│  │  ├─ 📄hydatos.png
+│  │  ├─ 📄pagos.png
+│  │  ├─ 📄pyros.png
+│  │  ├─ 📄zadnor.png
+│  │  ├─ 📄zone_anemos.ts
+│  │  ├─ 📄zone_bozja_southern.ts
+│  │  ├─ 📄zone_hydatos.ts
+│  │  ├─ 📄zone_pagos.ts
+│  │  ├─ 📄zone_pyros.ts
+│  │  └─ 📄zone_zadnor.ts
+│  ├─ 📁jobs
+│  │  ├─ 📁components
+│  │  │  ├─ 📄ast.ts
+│  │  │  ├─ 📄base.ts
+│  │  │  ├─ 📄blm.ts
+│  │  │  ├─ 📄blu.ts
+│  │  │  ├─ 📄brd.ts
+│  │  │  ├─ 📄dnc.ts
+│  │  │  ├─ 📄drg.ts
+│  │  │  ├─ 📄drk.ts
+│  │  │  ├─ 📄gnb.ts
+│  │  │  ├─ 📄index.ts
+│  │  │  ├─ 📄mch.ts
+│  │  │  ├─ 📄mnk.ts
+│  │  │  ├─ 📄nin.ts
+│  │  │  ├─ 📄pct.ts
+│  │  │  ├─ 📄pld.ts
+│  │  │  ├─ 📄rdm.ts
+│  │  │  ├─ 📄rpr.ts
+│  │  │  ├─ 📄sam.ts
+│  │  │  ├─ 📄sch.ts
+│  │  │  ├─ 📄sge.ts
+│  │  │  ├─ 📄smn.ts
+│  │  │  ├─ 📄vpr.ts
+│  │  │  ├─ 📄war.ts
+│  │  │  └─ 📄whm.ts
+│  │  ├─ 📄bars.ts
+│  │  ├─ 📄buff_tracker.ts
+│  │  ├─ 📄combo_tracker.ts
+│  │  ├─ 📄constants.ts
+│  │  ├─ 📄event_emitter.ts
+│  │  ├─ 📄jobs.css
+│  │  ├─ 📄jobs.html
+│  │  ├─ 📄jobs.ts
+│  │  ├─ 📄jobs_config.ts
+│  │  ├─ 📄jobs_options.ts
+│  │  ├─ 📄player.ts
+│  │  └─ 📄utils.ts
+│  ├─ 📁oopsyraidsy
+│  │  ├─ 📁data
+│  │  │  ├─ 📁00-misc
+│  │  │  │  ├─ 📄general.ts
+│  │  │  │  └─ 📄test.ts
+│  │  │  ├─ 📁02-arr
+│  │  │  │  └─ 📁trial
+│  │  │  │     ├─ 📄ifrit-nm.ts
+│  │  │  │     ├─ 📄levi-ex.ts
+│  │  │  │     ├─ 📄shiva-ex.ts
+│  │  │  │     ├─ 📄shiva-hm.ts
+│  │  │  │     ├─ 📄titan-ex.ts
+│  │  │  │     ├─ 📄titan-hm.ts
+│  │  │  │     ├─ 📄titan-nm.ts
+│  │  │  │     └─ 📄ultima-ex.ts
+│  │  │  ├─ 📁03-hw
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  └─ 📄weeping_city.ts
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄aetherochemical_research_facility.ts
+│  │  │  │  │  ├─ 📄baelsars_wall.ts
+│  │  │  │  │  ├─ 📄fractal_continuum.ts
+│  │  │  │  │  ├─ 📄gubal_library_hard.ts
+│  │  │  │  │  ├─ 📄sohm_al_hard.ts
+│  │  │  │  │  └─ 📄the_lost_city_of_amdapor_hard.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄a10n.ts
+│  │  │  │  │  ├─ 📄a12n.ts
+│  │  │  │  │  ├─ 📄a3n.ts
+│  │  │  │  │  └─ 📄a6n.ts
+│  │  │  │  └─ 📁trial
+│  │  │  │     ├─ 📄sephirot-ex.ts
+│  │  │  │     ├─ 📄sophia-ex.ts
+│  │  │  │     ├─ 📄thordan-ex.ts
+│  │  │  │     └─ 📄zurvan-ex.ts
+│  │  │  ├─ 📁04-sb
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  ├─ 📄orbonne_monastery.ts
+│  │  │  │  │  ├─ 📄ridorana_lighthouse.ts
+│  │  │  │  │  └─ 📄royal_city_of_rabanastre.ts
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄ala_mhigo.ts
+│  │  │  │  │  ├─ 📄bardams_mettle.ts
+│  │  │  │  │  ├─ 📄castrum_abania.ts
+│  │  │  │  │  ├─ 📄doma_castle.ts
+│  │  │  │  │  ├─ 📄drowned_city_of_skalla.ts
+│  │  │  │  │  ├─ 📄fractal_continuum_hard.ts
+│  │  │  │  │  ├─ 📄ghimlyt_dark.ts
+│  │  │  │  │  ├─ 📄hells_lid.ts
+│  │  │  │  │  ├─ 📄kugane_castle.ts
+│  │  │  │  │  ├─ 📄shisui_of_the_violet_tides.ts
+│  │  │  │  │  ├─ 📄sirensong_sea.ts
+│  │  │  │  │  ├─ 📄st_mocianne_hard.ts
+│  │  │  │  │  ├─ 📄swallows_compass.ts
+│  │  │  │  │  ├─ 📄temple_of_the_fist.ts
+│  │  │  │  │  └─ 📄the_burn.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄o10n.ts
+│  │  │  │  │  ├─ 📄o10s.ts
+│  │  │  │  │  ├─ 📄o11n.ts
+│  │  │  │  │  ├─ 📄o11s.ts
+│  │  │  │  │  ├─ 📄o12n.ts
+│  │  │  │  │  ├─ 📄o12s.ts
+│  │  │  │  │  ├─ 📄o1n.ts
+│  │  │  │  │  ├─ 📄o1s.ts
+│  │  │  │  │  ├─ 📄o2n.ts
+│  │  │  │  │  ├─ 📄o2s.ts
+│  │  │  │  │  ├─ 📄o3n.ts
+│  │  │  │  │  ├─ 📄o3s.ts
+│  │  │  │  │  ├─ 📄o4n.ts
+│  │  │  │  │  ├─ 📄o4s.ts
+│  │  │  │  │  ├─ 📄o5n.ts
+│  │  │  │  │  ├─ 📄o5s.ts
+│  │  │  │  │  ├─ 📄o6n.ts
+│  │  │  │  │  ├─ 📄o6s.ts
+│  │  │  │  │  ├─ 📄o7n.ts
+│  │  │  │  │  ├─ 📄o7s.ts
+│  │  │  │  │  ├─ 📄o8n.ts
+│  │  │  │  │  ├─ 📄o8s.ts
+│  │  │  │  │  ├─ 📄o9n.ts
+│  │  │  │  │  └─ 📄o9s.ts
+│  │  │  │  ├─ 📁trial
+│  │  │  │  │  ├─ 📄byakko-ex.ts
+│  │  │  │  │  ├─ 📄byakko.ts
+│  │  │  │  │  ├─ 📄lakshmi-ex.ts
+│  │  │  │  │  ├─ 📄lakshmi.ts
+│  │  │  │  │  ├─ 📄rathalos-ex.ts
+│  │  │  │  │  ├─ 📄rathalos.ts
+│  │  │  │  │  ├─ 📄seiryu-ex.ts
+│  │  │  │  │  ├─ 📄seiryu.ts
+│  │  │  │  │  ├─ 📄shinryu-ex.ts
+│  │  │  │  │  ├─ 📄shinryu.ts
+│  │  │  │  │  ├─ 📄susano-ex.ts
+│  │  │  │  │  ├─ 📄susano.ts
+│  │  │  │  │  ├─ 📄suzaku-ex.ts
+│  │  │  │  │  ├─ 📄suzaku.ts
+│  │  │  │  │  ├─ 📄tsukuyomi-ex.ts
+│  │  │  │  │  ├─ 📄tsukuyomi.ts
+│  │  │  │  │  └─ 📄yojimbo.ts
+│  │  │  │  └─ 📁ultimate
+│  │  │  │     ├─ 📄ultima_weapon_ultimate.ts
+│  │  │  │     └─ 📄unending_coil_ultimate.ts
+│  │  │  ├─ 📁05-shb
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  ├─ 📄the_copied_factory.ts
+│  │  │  │  │  ├─ 📄the_puppets_bunker.ts
+│  │  │  │  │  └─ 📄the_tower_at_paradigms_breach.ts
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄akadaemia_anyder.ts
+│  │  │  │  │  ├─ 📄amaurot.ts
+│  │  │  │  │  ├─ 📄anamnesis_anyder.ts
+│  │  │  │  │  ├─ 📄dohn_mheg.ts
+│  │  │  │  │  ├─ 📄heroes_gauntlet.ts
+│  │  │  │  │  ├─ 📄holminster_switch.ts
+│  │  │  │  │  ├─ 📄malikahs_well.ts
+│  │  │  │  │  ├─ 📄matoyas_relict.ts
+│  │  │  │  │  ├─ 📄mt_gulg.ts
+│  │  │  │  │  ├─ 📄paglthan.ts
+│  │  │  │  │  ├─ 📄qitana_ravel.ts
+│  │  │  │  │  ├─ 📄the_grand_cosmos.ts
+│  │  │  │  │  └─ 📄twinning.ts
+│  │  │  │  ├─ 📁eureka
+│  │  │  │  │  ├─ 📄delubrum_reginae.ts
+│  │  │  │  │  └─ 📄delubrum_reginae_savage.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄e10n.ts
+│  │  │  │  │  ├─ 📄e10s.ts
+│  │  │  │  │  ├─ 📄e11n.ts
+│  │  │  │  │  ├─ 📄e11s.ts
+│  │  │  │  │  ├─ 📄e12n.ts
+│  │  │  │  │  ├─ 📄e12s.ts
+│  │  │  │  │  ├─ 📄e1n.ts
+│  │  │  │  │  ├─ 📄e1s.ts
+│  │  │  │  │  ├─ 📄e2n.ts
+│  │  │  │  │  ├─ 📄e2s.ts
+│  │  │  │  │  ├─ 📄e3n.ts
+│  │  │  │  │  ├─ 📄e3s.ts
+│  │  │  │  │  ├─ 📄e4n.ts
+│  │  │  │  │  ├─ 📄e4s.ts
+│  │  │  │  │  ├─ 📄e5n.ts
+│  │  │  │  │  ├─ 📄e5s.ts
+│  │  │  │  │  ├─ 📄e6n.ts
+│  │  │  │  │  ├─ 📄e6s.ts
+│  │  │  │  │  ├─ 📄e7n.ts
+│  │  │  │  │  ├─ 📄e7s.ts
+│  │  │  │  │  ├─ 📄e8n.ts
+│  │  │  │  │  ├─ 📄e8s.ts
+│  │  │  │  │  ├─ 📄e9n.ts
+│  │  │  │  │  └─ 📄e9s.ts
+│  │  │  │  ├─ 📁trial
+│  │  │  │  │  ├─ 📄diamond_weapon-ex.ts
+│  │  │  │  │  ├─ 📄diamond_weapon.ts
+│  │  │  │  │  ├─ 📄emerald_weapon-ex.ts
+│  │  │  │  │  ├─ 📄emerald_weapon.ts
+│  │  │  │  │  ├─ 📄hades-ex.ts
+│  │  │  │  │  ├─ 📄hades.ts
+│  │  │  │  │  ├─ 📄innocence-ex.ts
+│  │  │  │  │  ├─ 📄innocence.ts
+│  │  │  │  │  ├─ 📄levi-un.ts
+│  │  │  │  │  ├─ 📄ruby_weapon-ex.ts
+│  │  │  │  │  ├─ 📄ruby_weapon.ts
+│  │  │  │  │  ├─ 📄shiva-un.ts
+│  │  │  │  │  ├─ 📄titan-un.ts
+│  │  │  │  │  ├─ 📄titania-ex.ts
+│  │  │  │  │  ├─ 📄titania.ts
+│  │  │  │  │  ├─ 📄varis-ex.ts
+│  │  │  │  │  ├─ 📄wol-ex.ts
+│  │  │  │  │  └─ 📄wol.ts
+│  │  │  │  └─ 📁ultimate
+│  │  │  │     └─ 📄the_epic_of_alexander.ts
+│  │  │  ├─ 📁06-ew
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  ├─ 📄aglaia.ts
+│  │  │  │  │  ├─ 📄euphrosyne.ts
+│  │  │  │  │  └─ 📄thaleia.ts
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄aetherfont.ts
+│  │  │  │  │  ├─ 📄aloalo_island.ts
+│  │  │  │  │  ├─ 📄alzadaals_legacy.ts
+│  │  │  │  │  ├─ 📄another_aloalo_island-savage.ts
+│  │  │  │  │  ├─ 📄another_aloalo_island.ts
+│  │  │  │  │  ├─ 📄another_mount_rokkon-savage.ts
+│  │  │  │  │  ├─ 📄another_mount_rokkon.ts
+│  │  │  │  │  ├─ 📄another_sildihn_subterrane-savage.ts
+│  │  │  │  │  ├─ 📄another_sildihn_subterrane.ts
+│  │  │  │  │  ├─ 📄ktisis_hyperboreia.ts
+│  │  │  │  │  ├─ 📄lapis_manalis.ts
+│  │  │  │  │  ├─ 📄mount_rokkon.ts
+│  │  │  │  │  ├─ 📄smileton.ts
+│  │  │  │  │  ├─ 📄stigma_dreamscape.ts
+│  │  │  │  │  ├─ 📄the_aitiascope.ts
+│  │  │  │  │  ├─ 📄the_dead_ends.ts
+│  │  │  │  │  ├─ 📄the_fell_court_of_troia.ts
+│  │  │  │  │  ├─ 📄the_lunar_subteranne.ts
+│  │  │  │  │  ├─ 📄the_sildihn_subterrane.ts
+│  │  │  │  │  ├─ 📄the_tower_of_babil.ts
+│  │  │  │  │  ├─ 📄the_tower_of_zot.ts
+│  │  │  │  │  └─ 📄vanaspati.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄p10n.ts
+│  │  │  │  │  ├─ 📄p10s.ts
+│  │  │  │  │  ├─ 📄p11n.ts
+│  │  │  │  │  ├─ 📄p11s.ts
+│  │  │  │  │  ├─ 📄p12n.ts
+│  │  │  │  │  ├─ 📄p12s.ts
+│  │  │  │  │  ├─ 📄p1n.ts
+│  │  │  │  │  ├─ 📄p1s.ts
+│  │  │  │  │  ├─ 📄p2n.ts
+│  │  │  │  │  ├─ 📄p2s.ts
+│  │  │  │  │  ├─ 📄p3n.ts
+│  │  │  │  │  ├─ 📄p3s.ts
+│  │  │  │  │  ├─ 📄p4n.ts
+│  │  │  │  │  ├─ 📄p4s.ts
+│  │  │  │  │  ├─ 📄p5n.ts
+│  │  │  │  │  ├─ 📄p5s.ts
+│  │  │  │  │  ├─ 📄p6n.ts
+│  │  │  │  │  ├─ 📄p6s.ts
+│  │  │  │  │  ├─ 📄p7n.ts
+│  │  │  │  │  ├─ 📄p7s.ts
+│  │  │  │  │  ├─ 📄p8n.ts
+│  │  │  │  │  ├─ 📄p8s.ts
+│  │  │  │  │  ├─ 📄p9n.ts
+│  │  │  │  │  └─ 📄p9s.ts
+│  │  │  │  ├─ 📁trial
+│  │  │  │  │  ├─ 📄asura.ts
+│  │  │  │  │  ├─ 📄barbariccia-ex.ts
+│  │  │  │  │  ├─ 📄barbariccia.ts
+│  │  │  │  │  ├─ 📄endsinger-ex.ts
+│  │  │  │  │  ├─ 📄endsinger.ts
+│  │  │  │  │  ├─ 📄golbez-ex.ts
+│  │  │  │  │  ├─ 📄golbez.ts
+│  │  │  │  │  ├─ 📄hydaelyn-ex.ts
+│  │  │  │  │  ├─ 📄hydaelyn.ts
+│  │  │  │  │  ├─ 📄rubicante-ex.ts
+│  │  │  │  │  ├─ 📄rubicante.ts
+│  │  │  │  │  ├─ 📄sephirot-un.ts
+│  │  │  │  │  ├─ 📄sophia-un.ts
+│  │  │  │  │  ├─ 📄thordan-un.ts
+│  │  │  │  │  ├─ 📄ultima-un.ts
+│  │  │  │  │  ├─ 📄zeromus-ex.ts
+│  │  │  │  │  ├─ 📄zeromus.ts
+│  │  │  │  │  ├─ 📄zodiark-ex.ts
+│  │  │  │  │  ├─ 📄zodiark.ts
+│  │  │  │  │  └─ 📄zurvan-un.ts
+│  │  │  │  └─ 📁ultimate
+│  │  │  │     ├─ 📄dragonsongs_reprise_ultimate.ts
+│  │  │  │     └─ 📄the_omega_protocol.ts
+│  │  │  ├─ 📁07-dt
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  └─ 📄jeuno-first-walk.ts
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄alexandria.ts
+│  │  │  │  │  ├─ 📄ihuykatumu.ts
+│  │  │  │  │  ├─ 📄origenics.ts
+│  │  │  │  │  ├─ 📄skydeep-cenote.ts
+│  │  │  │  │  ├─ 📄strayborough-deadwalk.ts
+│  │  │  │  │  ├─ 📄vanguard.ts
+│  │  │  │  │  ├─ 📄worqor-zormor.ts
+│  │  │  │  │  └─ 📄yuweyawata.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄r1n.ts
+│  │  │  │  │  ├─ 📄r1s.ts
+│  │  │  │  │  ├─ 📄r2n.ts
+│  │  │  │  │  ├─ 📄r2s.ts
+│  │  │  │  │  ├─ 📄r3n.ts
+│  │  │  │  │  ├─ 📄r3s.ts
+│  │  │  │  │  ├─ 📄r4n.ts
+│  │  │  │  │  └─ 📄r4s.ts
+│  │  │  │  ├─ 📁trial
+│  │  │  │  │  ├─ 📄byakko-un.ts
+│  │  │  │  │  ├─ 📄valigarmanda-ex.ts
+│  │  │  │  │  ├─ 📄valigarmanda.ts
+│  │  │  │  │  ├─ 📄zoraal-ja-ex.ts
+│  │  │  │  │  └─ 📄zoraal-ja.ts
+│  │  │  │  └─ 📁ultimate
+│  │  │  │     └─ 📄futures_rewritten.ts
+│  │  │  └─ 📄oopsy_manifest.txt
+│  │  ├─ 📄buff_map.ts
+│  │  ├─ 📄combat_state.ts
+│  │  ├─ 📄damage_tracker.ts
+│  │  ├─ 📄death_report.ts
+│  │  ├─ 📄missed_buff_collector.ts
+│  │  ├─ 📄mistake_collector.ts
+│  │  ├─ 📄mistake_observer.ts
+│  │  ├─ 📄oopsy_common.css
+│  │  ├─ 📄oopsy_common.ts
+│  │  ├─ 📄oopsy_fields.ts
+│  │  ├─ 📄oopsy_live.css
+│  │  ├─ 📄oopsy_live.ts
+│  │  ├─ 📄oopsy_live_list.ts
+│  │  ├─ 📄oopsy_options.ts
+│  │  ├─ 📄oopsy_summary.css
+│  │  ├─ 📄oopsy_summary.html
+│  │  ├─ 📄oopsy_summary.ts
+│  │  ├─ 📄oopsy_summary_list.ts
+│  │  ├─ 📄oopsy_viewer.css
+│  │  ├─ 📄oopsy_viewer.html
+│  │  ├─ 📄oopsy_viewer.ts
+│  │  ├─ 📄oopsyraidsy.html
+│  │  ├─ 📄oopsyraidsy.ts
+│  │  ├─ 📄oopsyraidsy_config.ts
+│  │  └─ 📄player_state_tracker.ts
+│  ├─ 📁pullcounter
+│  │  ├─ 📄pullcounter.css
+│  │  ├─ 📄pullcounter.html
+│  │  └─ 📄pullcounter.ts
+│  ├─ 📁radar
+│  │  ├─ 📄arrow.png
+│  │  ├─ 📄radar.css
+│  │  ├─ 📄radar.html
+│  │  ├─ 📄radar.ts
+│  │  └─ 📄radar_config.ts
+│  ├─ 📁raidboss
+│  │  ├─ 📁data
+│  │  │  ├─ 📁00-misc
+│  │  │  │  ├─ 📄general.ts
+│  │  │  │  ├─ 📄test.ts
+│  │  │  │  ├─ 📄test.txt
+│  │  │  │  └─ 📄the_masked_carnivale.ts
+│  │  │  ├─ 📁02-arr
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  └─ 📄the_world_of_darkness.ts
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄amdapor_keep.ts
+│  │  │  │  │  ├─ 📄amdapor_keep_hard.ts
+│  │  │  │  │  ├─ 📄aurum_vale.ts
+│  │  │  │  │  ├─ 📄brayfloxs_longstop.ts
+│  │  │  │  │  ├─ 📄cutters_cry.ts
+│  │  │  │  │  ├─ 📄halatali_hard.ts
+│  │  │  │  │  ├─ 📄haukke_manor.ts
+│  │  │  │  │  ├─ 📄haukke_manor_hard.ts
+│  │  │  │  │  ├─ 📄hullbreaker_isle.ts
+│  │  │  │  │  ├─ 📄pharos_sirius.ts
+│  │  │  │  │  ├─ 📄sastasha_hard.ts
+│  │  │  │  │  ├─ 📄snowcloak.ts
+│  │  │  │  │  ├─ 📄the_lost_city_of_amdapor.ts
+│  │  │  │  │  ├─ 📄the_stone_vigil.ts
+│  │  │  │  │  ├─ 📄the_stone_vigil_hard.ts
+│  │  │  │  │  ├─ 📄the_sunken_temple_of_quarn.ts
+│  │  │  │  │  ├─ 📄the_sunken_temple_of_quarn_hard.ts
+│  │  │  │  │  ├─ 📄the_tam_tara_depocraft_hard.ts
+│  │  │  │  │  └─ 📄the_wanderers_palace_hard.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄t1.ts
+│  │  │  │  │  ├─ 📄t10.ts
+│  │  │  │  │  ├─ 📄t10.txt
+│  │  │  │  │  ├─ 📄t11.ts
+│  │  │  │  │  ├─ 📄t11.txt
+│  │  │  │  │  ├─ 📄t12.ts
+│  │  │  │  │  ├─ 📄t12.txt
+│  │  │  │  │  ├─ 📄t13.ts
+│  │  │  │  │  ├─ 📄t13.txt
+│  │  │  │  │  ├─ 📄t2.ts
+│  │  │  │  │  ├─ 📄t4.ts
+│  │  │  │  │  ├─ 📄t4.txt
+│  │  │  │  │  ├─ 📄t5.ts
+│  │  │  │  │  ├─ 📄t5.txt
+│  │  │  │  │  ├─ 📄t6.ts
+│  │  │  │  │  ├─ 📄t6.txt
+│  │  │  │  │  ├─ 📄t7.ts
+│  │  │  │  │  ├─ 📄t7.txt
+│  │  │  │  │  ├─ 📄t8.ts
+│  │  │  │  │  ├─ 📄t8.txt
+│  │  │  │  │  ├─ 📄t9.ts
+│  │  │  │  │  └─ 📄t9.txt
+│  │  │  │  └─ 📁trial
+│  │  │  │     ├─ 📄ifrit-nm.ts
+│  │  │  │     ├─ 📄ifrit-nm.txt
+│  │  │  │     ├─ 📄levi-ex.ts
+│  │  │  │     ├─ 📄levi-ex.txt
+│  │  │  │     ├─ 📄shiva-ex.ts
+│  │  │  │     ├─ 📄shiva-ex.txt
+│  │  │  │     ├─ 📄shiva-hm.ts
+│  │  │  │     ├─ 📄shiva-hm.txt
+│  │  │  │     ├─ 📄titan-ex.ts
+│  │  │  │     ├─ 📄titan-ex.txt
+│  │  │  │     ├─ 📄titan-hm.ts
+│  │  │  │     ├─ 📄titan-hm.txt
+│  │  │  │     ├─ 📄titan-nm.ts
+│  │  │  │     ├─ 📄titan-nm.txt
+│  │  │  │     ├─ 📄ultima-ex.ts
+│  │  │  │     └─ 📄ultima-ex.txt
+│  │  │  ├─ 📁03-hw
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  ├─ 📄dun_scaith.ts
+│  │  │  │  │  ├─ 📄dun_scaith.txt
+│  │  │  │  │  ├─ 📄weeping_city.ts
+│  │  │  │  │  └─ 📄weeping_city.txt
+│  │  │  │  ├─ 📁deepdungeon
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_001-010.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_011-020.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_021-030.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_031-040.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_041-050.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_051-060.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_061-070.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_071-080.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_081-090.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_091-100.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_101-110.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_111-120.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_121-130.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_131-140.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_141-150.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_151-160.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_161-170.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_171-180.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_181-190.ts
+│  │  │  │  │  ├─ 📄the_palace_of_the_dead_floors_191-200.ts
+│  │  │  │  │  └─ 📄the_palace_of_the_dead_general.ts
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄aetherochemical_research_facility.ts
+│  │  │  │  │  ├─ 📄aetherochemical_research_facility.txt
+│  │  │  │  │  ├─ 📄baelsars_wall.ts
+│  │  │  │  │  ├─ 📄baelsars_wall.txt
+│  │  │  │  │  ├─ 📄fractal_continuum.ts
+│  │  │  │  │  ├─ 📄fractal_continuum.txt
+│  │  │  │  │  ├─ 📄gubal_library_hard.ts
+│  │  │  │  │  ├─ 📄gubal_library_hard.txt
+│  │  │  │  │  ├─ 📄sohm_al.ts
+│  │  │  │  │  ├─ 📄sohm_al.txt
+│  │  │  │  │  ├─ 📄sohm_al_hard.ts
+│  │  │  │  │  ├─ 📄sohm_al_hard.txt
+│  │  │  │  │  ├─ 📄the_lost_city_of_amdapor_hard.ts
+│  │  │  │  │  ├─ 📄the_lost_city_of_amdapor_hard.txt
+│  │  │  │  │  ├─ 📄the_vault.ts
+│  │  │  │  │  ├─ 📄the_vault.txt
+│  │  │  │  │  ├─ 📄xelphatol.ts
+│  │  │  │  │  └─ 📄xelphatol.txt
+│  │  │  │  ├─ 📁map
+│  │  │  │  │  └─ 📄the_aquapolis.ts
+│  │  │  │  ├─ 📁pvp
+│  │  │  │  │  └─ 📄shatter.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄a10n.ts
+│  │  │  │  │  ├─ 📄a10n.txt
+│  │  │  │  │  ├─ 📄a10s.ts
+│  │  │  │  │  ├─ 📄a10s.txt
+│  │  │  │  │  ├─ 📄a11s.ts
+│  │  │  │  │  ├─ 📄a11s.txt
+│  │  │  │  │  ├─ 📄a12n.ts
+│  │  │  │  │  ├─ 📄a12n.txt
+│  │  │  │  │  ├─ 📄a12s.ts
+│  │  │  │  │  ├─ 📄a12s.txt
+│  │  │  │  │  ├─ 📄a1s.ts
+│  │  │  │  │  ├─ 📄a1s.txt
+│  │  │  │  │  ├─ 📄a2s.ts
+│  │  │  │  │  ├─ 📄a2s.txt
+│  │  │  │  │  ├─ 📄a3n.ts
+│  │  │  │  │  ├─ 📄a3n.txt
+│  │  │  │  │  ├─ 📄a3s.ts
+│  │  │  │  │  ├─ 📄a3s.txt
+│  │  │  │  │  ├─ 📄a4s.ts
+│  │  │  │  │  ├─ 📄a4s.txt
+│  │  │  │  │  ├─ 📄a5s.ts
+│  │  │  │  │  ├─ 📄a5s.txt
+│  │  │  │  │  ├─ 📄a6n.ts
+│  │  │  │  │  ├─ 📄a6n.txt
+│  │  │  │  │  ├─ 📄a6s.ts
+│  │  │  │  │  ├─ 📄a6s.txt
+│  │  │  │  │  ├─ 📄a7s.ts
+│  │  │  │  │  ├─ 📄a7s.txt
+│  │  │  │  │  ├─ 📄a8n.ts
+│  │  │  │  │  ├─ 📄a8n.txt
+│  │  │  │  │  ├─ 📄a8s.ts
+│  │  │  │  │  ├─ 📄a8s.txt
+│  │  │  │  │  ├─ 📄a9s.ts
+│  │  │  │  │  └─ 📄a9s.txt
+│  │  │  │  └─ 📁trial
+│  │  │  │     ├─ 📄bismarck-ex.ts
+│  │  │  │     ├─ 📄ravana-ex.ts
+│  │  │  │     ├─ 📄ravana-ex.txt
+│  │  │  │     ├─ 📄sephirot-ex.ts
+│  │  │  │     ├─ 📄sephirot-ex.txt
+│  │  │  │     ├─ 📄sephirot.ts
+│  │  │  │     ├─ 📄sophia-ex.ts
+│  │  │  │     ├─ 📄sophia-ex.txt
+│  │  │  │     ├─ 📄thordan-ex.ts
+│  │  │  │     ├─ 📄thordan-ex.txt
+│  │  │  │     ├─ 📄zurvan-ex.ts
+│  │  │  │     └─ 📄zurvan-ex.txt
+│  │  │  ├─ 📁04-sb
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  ├─ 📄orbonne_monastery.ts
+│  │  │  │  │  ├─ 📄orbonne_monastery.txt
+│  │  │  │  │  ├─ 📄ridorana_lighthouse.ts
+│  │  │  │  │  ├─ 📄ridorana_lighthouse.txt
+│  │  │  │  │  ├─ 📄royal_city_of_rabanastre.ts
+│  │  │  │  │  └─ 📄royal_city_of_rabanastre.txt
+│  │  │  │  ├─ 📁deepdungeon
+│  │  │  │  │  ├─ 📄heaven-on-high_floors_01-10.ts
+│  │  │  │  │  ├─ 📄heaven-on-high_floors_11-20.ts
+│  │  │  │  │  ├─ 📄heaven-on-high_floors_21-30.ts
+│  │  │  │  │  ├─ 📄heaven-on-high_floors_31-40.ts
+│  │  │  │  │  ├─ 📄heaven-on-high_floors_41-50.ts
+│  │  │  │  │  ├─ 📄heaven-on-high_floors_51-60.ts
+│  │  │  │  │  ├─ 📄heaven-on-high_floors_61-70.ts
+│  │  │  │  │  ├─ 📄heaven-on-high_floors_71-80.ts
+│  │  │  │  │  ├─ 📄heaven-on-high_floors_81-90.ts
+│  │  │  │  │  ├─ 📄heaven-on-high_floors_91-100.ts
+│  │  │  │  │  └─ 📄heaven-on-high_general.ts
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄ala_mhigo.ts
+│  │  │  │  │  ├─ 📄ala_mhigo.txt
+│  │  │  │  │  ├─ 📄bardams_mettle.ts
+│  │  │  │  │  ├─ 📄bardams_mettle.txt
+│  │  │  │  │  ├─ 📄castrum_abania.ts
+│  │  │  │  │  ├─ 📄castrum_abania.txt
+│  │  │  │  │  ├─ 📄doma_castle.ts
+│  │  │  │  │  ├─ 📄doma_castle.txt
+│  │  │  │  │  ├─ 📄drowned_city_of_skalla.ts
+│  │  │  │  │  ├─ 📄drowned_city_of_skalla.txt
+│  │  │  │  │  ├─ 📄fractal_continuum_hard.ts
+│  │  │  │  │  ├─ 📄fractal_continuum_hard.txt
+│  │  │  │  │  ├─ 📄ghimlyt_dark.ts
+│  │  │  │  │  ├─ 📄ghimlyt_dark.txt
+│  │  │  │  │  ├─ 📄hells_lid.ts
+│  │  │  │  │  ├─ 📄hells_lid.txt
+│  │  │  │  │  ├─ 📄kugane_castle.ts
+│  │  │  │  │  ├─ 📄kugane_castle.txt
+│  │  │  │  │  ├─ 📄shisui_of_the_violet_tides.ts
+│  │  │  │  │  ├─ 📄shisui_of_the_violet_tides.txt
+│  │  │  │  │  ├─ 📄sirensong_sea.ts
+│  │  │  │  │  ├─ 📄sirensong_sea.txt
+│  │  │  │  │  ├─ 📄st_mocianne_hard.ts
+│  │  │  │  │  ├─ 📄st_mocianne_hard.txt
+│  │  │  │  │  ├─ 📄swallows_compass.ts
+│  │  │  │  │  ├─ 📄swallows_compass.txt
+│  │  │  │  │  ├─ 📄temple_of_the_fist.ts
+│  │  │  │  │  ├─ 📄temple_of_the_fist.txt
+│  │  │  │  │  ├─ 📄the_burn.ts
+│  │  │  │  │  └─ 📄the_burn.txt
+│  │  │  │  ├─ 📁eureka
+│  │  │  │  │  ├─ 📄eureka_anemos.ts
+│  │  │  │  │  ├─ 📄eureka_hydatos.ts
+│  │  │  │  │  ├─ 📄eureka_hydatos.txt
+│  │  │  │  │  ├─ 📄eureka_pagos.ts
+│  │  │  │  │  └─ 📄eureka_pyros.ts
+│  │  │  │  ├─ 📁hunts
+│  │  │  │  │  └─ 📄yanxia.ts
+│  │  │  │  ├─ 📁map
+│  │  │  │  │  ├─ 📄the_hidden_canals_of_uznair.ts
+│  │  │  │  │  ├─ 📄the_lost_canals_of_uznair.ts
+│  │  │  │  │  └─ 📄the_shifting_altars_of_uznair.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄o10n.ts
+│  │  │  │  │  ├─ 📄o10n.txt
+│  │  │  │  │  ├─ 📄o10s.ts
+│  │  │  │  │  ├─ 📄o10s.txt
+│  │  │  │  │  ├─ 📄o11n.ts
+│  │  │  │  │  ├─ 📄o11n.txt
+│  │  │  │  │  ├─ 📄o11s.ts
+│  │  │  │  │  ├─ 📄o11s.txt
+│  │  │  │  │  ├─ 📄o12n.ts
+│  │  │  │  │  ├─ 📄o12n.txt
+│  │  │  │  │  ├─ 📄o12s.ts
+│  │  │  │  │  ├─ 📄o12s.txt
+│  │  │  │  │  ├─ 📄o1n.ts
+│  │  │  │  │  ├─ 📄o1n.txt
+│  │  │  │  │  ├─ 📄o1s.ts
+│  │  │  │  │  ├─ 📄o1s.txt
+│  │  │  │  │  ├─ 📄o2n.ts
+│  │  │  │  │  ├─ 📄o2n.txt
+│  │  │  │  │  ├─ 📄o2s.ts
+│  │  │  │  │  ├─ 📄o2s.txt
+│  │  │  │  │  ├─ 📄o3n.ts
+│  │  │  │  │  ├─ 📄o3n.txt
+│  │  │  │  │  ├─ 📄o3s.ts
+│  │  │  │  │  ├─ 📄o3s.txt
+│  │  │  │  │  ├─ 📄o4n.ts
+│  │  │  │  │  ├─ 📄o4n.txt
+│  │  │  │  │  ├─ 📄o4s.ts
+│  │  │  │  │  ├─ 📄o4s.txt
+│  │  │  │  │  ├─ 📄o5n.ts
+│  │  │  │  │  ├─ 📄o5n.txt
+│  │  │  │  │  ├─ 📄o5s.ts
+│  │  │  │  │  ├─ 📄o5s.txt
+│  │  │  │  │  ├─ 📄o6n.ts
+│  │  │  │  │  ├─ 📄o6n.txt
+│  │  │  │  │  ├─ 📄o6s.ts
+│  │  │  │  │  ├─ 📄o6s.txt
+│  │  │  │  │  ├─ 📄o7n.ts
+│  │  │  │  │  ├─ 📄o7n.txt
+│  │  │  │  │  ├─ 📄o7s.ts
+│  │  │  │  │  ├─ 📄o7s.txt
+│  │  │  │  │  ├─ 📄o8n.ts
+│  │  │  │  │  ├─ 📄o8n.txt
+│  │  │  │  │  ├─ 📄o8s.ts
+│  │  │  │  │  ├─ 📄o8s.txt
+│  │  │  │  │  ├─ 📄o9n.ts
+│  │  │  │  │  ├─ 📄o9n.txt
+│  │  │  │  │  ├─ 📄o9s.ts
+│  │  │  │  │  └─ 📄o9s.txt
+│  │  │  │  ├─ 📁trial
+│  │  │  │  │  ├─ 📄byakko-ex.ts
+│  │  │  │  │  ├─ 📄byakko-ex.txt
+│  │  │  │  │  ├─ 📄byakko.ts
+│  │  │  │  │  ├─ 📄byakko.txt
+│  │  │  │  │  ├─ 📄lakshmi-ex.ts
+│  │  │  │  │  ├─ 📄lakshmi-ex.txt
+│  │  │  │  │  ├─ 📄lakshmi.ts
+│  │  │  │  │  ├─ 📄lakshmi.txt
+│  │  │  │  │  ├─ 📄rathalos-ex.ts
+│  │  │  │  │  ├─ 📄rathalos.ts
+│  │  │  │  │  ├─ 📄seiryu-ex.ts
+│  │  │  │  │  ├─ 📄seiryu-ex.txt
+│  │  │  │  │  ├─ 📄seiryu.ts
+│  │  │  │  │  ├─ 📄seiryu.txt
+│  │  │  │  │  ├─ 📄shinryu-ex.ts
+│  │  │  │  │  ├─ 📄shinryu-ex.txt
+│  │  │  │  │  ├─ 📄shinryu.ts
+│  │  │  │  │  ├─ 📄shinryu.txt
+│  │  │  │  │  ├─ 📄susano-ex.ts
+│  │  │  │  │  ├─ 📄susano-ex.txt
+│  │  │  │  │  ├─ 📄susano.ts
+│  │  │  │  │  ├─ 📄susano.txt
+│  │  │  │  │  ├─ 📄suzaku-ex.ts
+│  │  │  │  │  ├─ 📄suzaku-ex.txt
+│  │  │  │  │  ├─ 📄suzaku.ts
+│  │  │  │  │  ├─ 📄suzaku.txt
+│  │  │  │  │  ├─ 📄tsukuyomi-ex.ts
+│  │  │  │  │  ├─ 📄tsukuyomi-ex.txt
+│  │  │  │  │  ├─ 📄tsukuyomi.ts
+│  │  │  │  │  ├─ 📄tsukuyomi.txt
+│  │  │  │  │  ├─ 📄yojimbo.ts
+│  │  │  │  │  └─ 📄yojimbo.txt
+│  │  │  │  └─ 📁ultimate
+│  │  │  │     ├─ 📄ultima_weapon_ultimate.ts
+│  │  │  │     ├─ 📄ultima_weapon_ultimate.txt
+│  │  │  │     ├─ 📄unending_coil_ultimate.ts
+│  │  │  │     └─ 📄unending_coil_ultimate.txt
+│  │  │  ├─ 📁05-shb
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  ├─ 📄the_copied_factory.ts
+│  │  │  │  │  ├─ 📄the_copied_factory.txt
+│  │  │  │  │  ├─ 📄the_puppets_bunker.ts
+│  │  │  │  │  ├─ 📄the_puppets_bunker.txt
+│  │  │  │  │  ├─ 📄the_tower_at_paradigms_breach.ts
+│  │  │  │  │  └─ 📄the_tower_at_paradigms_breach.txt
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄akadaemia_anyder.ts
+│  │  │  │  │  ├─ 📄akadaemia_anyder.txt
+│  │  │  │  │  ├─ 📄amaurot.ts
+│  │  │  │  │  ├─ 📄amaurot.txt
+│  │  │  │  │  ├─ 📄anamnesis_anyder.ts
+│  │  │  │  │  ├─ 📄anamnesis_anyder.txt
+│  │  │  │  │  ├─ 📄dohn_mheg.ts
+│  │  │  │  │  ├─ 📄dohn_mheg.txt
+│  │  │  │  │  ├─ 📄heroes_gauntlet.ts
+│  │  │  │  │  ├─ 📄heroes_gauntlet.txt
+│  │  │  │  │  ├─ 📄holminster_switch.ts
+│  │  │  │  │  ├─ 📄holminster_switch.txt
+│  │  │  │  │  ├─ 📄malikahs_well.ts
+│  │  │  │  │  ├─ 📄malikahs_well.txt
+│  │  │  │  │  ├─ 📄matoyas_relict.ts
+│  │  │  │  │  ├─ 📄matoyas_relict.txt
+│  │  │  │  │  ├─ 📄mt_gulg.ts
+│  │  │  │  │  ├─ 📄mt_gulg.txt
+│  │  │  │  │  ├─ 📄paglthan.ts
+│  │  │  │  │  ├─ 📄paglthan.txt
+│  │  │  │  │  ├─ 📄qitana_ravel.ts
+│  │  │  │  │  ├─ 📄qitana_ravel.txt
+│  │  │  │  │  ├─ 📄the_grand_cosmos.ts
+│  │  │  │  │  ├─ 📄the_grand_cosmos.txt
+│  │  │  │  │  ├─ 📄twinning.ts
+│  │  │  │  │  └─ 📄twinning.txt
+│  │  │  │  ├─ 📁etc
+│  │  │  │  │  └─ 📄the_diadem.ts
+│  │  │  │  ├─ 📁eureka
+│  │  │  │  │  ├─ 📄bozjan_southern_front.ts
+│  │  │  │  │  ├─ 📄bozjan_southern_front.txt
+│  │  │  │  │  ├─ 📄delubrum_reginae.ts
+│  │  │  │  │  ├─ 📄delubrum_reginae.txt
+│  │  │  │  │  ├─ 📄delubrum_reginae_savage.ts
+│  │  │  │  │  ├─ 📄delubrum_reginae_savage.txt
+│  │  │  │  │  ├─ 📄zadnor.ts
+│  │  │  │  │  └─ 📄zadnor.txt
+│  │  │  │  ├─ 📁hunts
+│  │  │  │  │  ├─ 📄amh_araeng.ts
+│  │  │  │  │  ├─ 📄il_mheg.ts
+│  │  │  │  │  ├─ 📄kholusia.ts
+│  │  │  │  │  ├─ 📄lakeland.ts
+│  │  │  │  │  ├─ 📄ss_rank.ts
+│  │  │  │  │  ├─ 📄the_raktika_greatwood.ts
+│  │  │  │  │  └─ 📄the_tempest.ts
+│  │  │  │  ├─ 📁map
+│  │  │  │  │  ├─ 📄the_dungeons_of_lyhe_ghiah.ts
+│  │  │  │  │  └─ 📄the_shifting_oubliettes_of_lyhe_ghiah.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄e10n.ts
+│  │  │  │  │  ├─ 📄e10n.txt
+│  │  │  │  │  ├─ 📄e10s.ts
+│  │  │  │  │  ├─ 📄e10s.txt
+│  │  │  │  │  ├─ 📄e11n.ts
+│  │  │  │  │  ├─ 📄e11n.txt
+│  │  │  │  │  ├─ 📄e11s.ts
+│  │  │  │  │  ├─ 📄e11s.txt
+│  │  │  │  │  ├─ 📄e12n.ts
+│  │  │  │  │  ├─ 📄e12n.txt
+│  │  │  │  │  ├─ 📄e12s.ts
+│  │  │  │  │  ├─ 📄e12s.txt
+│  │  │  │  │  ├─ 📄e1n.ts
+│  │  │  │  │  ├─ 📄e1n.txt
+│  │  │  │  │  ├─ 📄e1s.ts
+│  │  │  │  │  ├─ 📄e1s.txt
+│  │  │  │  │  ├─ 📄e2n.ts
+│  │  │  │  │  ├─ 📄e2n.txt
+│  │  │  │  │  ├─ 📄e2s.ts
+│  │  │  │  │  ├─ 📄e2s.txt
+│  │  │  │  │  ├─ 📄e3n.ts
+│  │  │  │  │  ├─ 📄e3n.txt
+│  │  │  │  │  ├─ 📄e3s.ts
+│  │  │  │  │  ├─ 📄e3s.txt
+│  │  │  │  │  ├─ 📄e4n.ts
+│  │  │  │  │  ├─ 📄e4n.txt
+│  │  │  │  │  ├─ 📄e4s.ts
+│  │  │  │  │  ├─ 📄e4s.txt
+│  │  │  │  │  ├─ 📄e5n.ts
+│  │  │  │  │  ├─ 📄e5n.txt
+│  │  │  │  │  ├─ 📄e5s.ts
+│  │  │  │  │  ├─ 📄e5s.txt
+│  │  │  │  │  ├─ 📄e6n.ts
+│  │  │  │  │  ├─ 📄e6n.txt
+│  │  │  │  │  ├─ 📄e6s.ts
+│  │  │  │  │  ├─ 📄e6s.txt
+│  │  │  │  │  ├─ 📄e7n.ts
+│  │  │  │  │  ├─ 📄e7n.txt
+│  │  │  │  │  ├─ 📄e7s.ts
+│  │  │  │  │  ├─ 📄e7s.txt
+│  │  │  │  │  ├─ 📄e8n.ts
+│  │  │  │  │  ├─ 📄e8n.txt
+│  │  │  │  │  ├─ 📄e8s.ts
+│  │  │  │  │  ├─ 📄e8s.txt
+│  │  │  │  │  ├─ 📄e9n.ts
+│  │  │  │  │  ├─ 📄e9n.txt
+│  │  │  │  │  ├─ 📄e9s.ts
+│  │  │  │  │  └─ 📄e9s.txt
+│  │  │  │  ├─ 📁trial
+│  │  │  │  │  ├─ 📄diamond_weapon-ex.ts
+│  │  │  │  │  ├─ 📄diamond_weapon-ex.txt
+│  │  │  │  │  ├─ 📄diamond_weapon.ts
+│  │  │  │  │  ├─ 📄diamond_weapon.txt
+│  │  │  │  │  ├─ 📄emerald_weapon-ex.ts
+│  │  │  │  │  ├─ 📄emerald_weapon-ex.txt
+│  │  │  │  │  ├─ 📄emerald_weapon.ts
+│  │  │  │  │  ├─ 📄emerald_weapon.txt
+│  │  │  │  │  ├─ 📄hades-ex.ts
+│  │  │  │  │  ├─ 📄hades-ex.txt
+│  │  │  │  │  ├─ 📄hades.ts
+│  │  │  │  │  ├─ 📄hades.txt
+│  │  │  │  │  ├─ 📄innocence-ex.ts
+│  │  │  │  │  ├─ 📄innocence-ex.txt
+│  │  │  │  │  ├─ 📄innocence.ts
+│  │  │  │  │  ├─ 📄innocence.txt
+│  │  │  │  │  ├─ 📄levi-un.ts
+│  │  │  │  │  ├─ 📄levi-un.txt
+│  │  │  │  │  ├─ 📄ruby_weapon-ex.ts
+│  │  │  │  │  ├─ 📄ruby_weapon-ex.txt
+│  │  │  │  │  ├─ 📄ruby_weapon.ts
+│  │  │  │  │  ├─ 📄ruby_weapon.txt
+│  │  │  │  │  ├─ 📄shiva-un.ts
+│  │  │  │  │  ├─ 📄shiva-un.txt
+│  │  │  │  │  ├─ 📄titan-un.ts
+│  │  │  │  │  ├─ 📄titan-un.txt
+│  │  │  │  │  ├─ 📄titania-ex.ts
+│  │  │  │  │  ├─ 📄titania-ex.txt
+│  │  │  │  │  ├─ 📄titania.ts
+│  │  │  │  │  ├─ 📄titania.txt
+│  │  │  │  │  ├─ 📄varis-ex.ts
+│  │  │  │  │  ├─ 📄varis-ex.txt
+│  │  │  │  │  ├─ 📄wol-ex.ts
+│  │  │  │  │  ├─ 📄wol-ex.txt
+│  │  │  │  │  ├─ 📄wol.ts
+│  │  │  │  │  └─ 📄wol.txt
+│  │  │  │  └─ 📁ultimate
+│  │  │  │     ├─ 📄the_epic_of_alexander.ts
+│  │  │  │     └─ 📄the_epic_of_alexander.txt
+│  │  │  ├─ 📁06-ew
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  ├─ 📄aglaia.ts
+│  │  │  │  │  ├─ 📄aglaia.txt
+│  │  │  │  │  ├─ 📄euphrosyne.ts
+│  │  │  │  │  ├─ 📄euphrosyne.txt
+│  │  │  │  │  ├─ 📄thaleia.ts
+│  │  │  │  │  └─ 📄thaleia.txt
+│  │  │  │  ├─ 📁deepdungeon
+│  │  │  │  │  ├─ 📄eureka_orthos_floors_01-10.ts
+│  │  │  │  │  ├─ 📄eureka_orthos_floors_11-20.ts
+│  │  │  │  │  ├─ 📄eureka_orthos_floors_21-30.ts
+│  │  │  │  │  ├─ 📄eureka_orthos_floors_31-40.ts
+│  │  │  │  │  ├─ 📄eureka_orthos_floors_41-50.ts
+│  │  │  │  │  ├─ 📄eureka_orthos_floors_51-60.ts
+│  │  │  │  │  ├─ 📄eureka_orthos_floors_61-70.ts
+│  │  │  │  │  ├─ 📄eureka_orthos_floors_71-80.ts
+│  │  │  │  │  ├─ 📄eureka_orthos_floors_81-90.ts
+│  │  │  │  │  ├─ 📄eureka_orthos_floors_91-100.ts
+│  │  │  │  │  └─ 📄eureka_orthos_general.ts
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄aetherfont.ts
+│  │  │  │  │  ├─ 📄aetherfont.txt
+│  │  │  │  │  ├─ 📄aloalo_island.ts
+│  │  │  │  │  ├─ 📄aloalo_island.txt
+│  │  │  │  │  ├─ 📄alzadaals_legacy.ts
+│  │  │  │  │  ├─ 📄alzadaals_legacy.txt
+│  │  │  │  │  ├─ 📄another_aloalo_island-savage.ts
+│  │  │  │  │  ├─ 📄another_aloalo_island-savage.txt
+│  │  │  │  │  ├─ 📄another_aloalo_island.ts
+│  │  │  │  │  ├─ 📄another_aloalo_island.txt
+│  │  │  │  │  ├─ 📄another_mount_rokkon-savage.ts
+│  │  │  │  │  ├─ 📄another_mount_rokkon-savage.txt
+│  │  │  │  │  ├─ 📄another_mount_rokkon.ts
+│  │  │  │  │  ├─ 📄another_mount_rokkon.txt
+│  │  │  │  │  ├─ 📄another_sildihn_subterrane-savage.ts
+│  │  │  │  │  ├─ 📄another_sildihn_subterrane-savage.txt
+│  │  │  │  │  ├─ 📄another_sildihn_subterrane.ts
+│  │  │  │  │  ├─ 📄another_sildihn_subterrane.txt
+│  │  │  │  │  ├─ 📄ktisis_hyperboreia.ts
+│  │  │  │  │  ├─ 📄ktisis_hyperboreia.txt
+│  │  │  │  │  ├─ 📄lapis_manalis.ts
+│  │  │  │  │  ├─ 📄lapis_manalis.txt
+│  │  │  │  │  ├─ 📄mount_rokkon.ts
+│  │  │  │  │  ├─ 📄mount_rokkon.txt
+│  │  │  │  │  ├─ 📄smileton.ts
+│  │  │  │  │  ├─ 📄smileton.txt
+│  │  │  │  │  ├─ 📄stigma_dreamscape.ts
+│  │  │  │  │  ├─ 📄stigma_dreamscape.txt
+│  │  │  │  │  ├─ 📄the_aitiascope.ts
+│  │  │  │  │  ├─ 📄the_aitiascope.txt
+│  │  │  │  │  ├─ 📄the_dead_ends.ts
+│  │  │  │  │  ├─ 📄the_dead_ends.txt
+│  │  │  │  │  ├─ 📄the_fell_court_of_troia.ts
+│  │  │  │  │  ├─ 📄the_fell_court_of_troia.txt
+│  │  │  │  │  ├─ 📄the_lunar_subterrane.ts
+│  │  │  │  │  ├─ 📄the_lunar_subterrane.txt
+│  │  │  │  │  ├─ 📄the_sildihn_subterrane.ts
+│  │  │  │  │  ├─ 📄the_sildihn_subterrane.txt
+│  │  │  │  │  ├─ 📄the_tower_of_babil.ts
+│  │  │  │  │  ├─ 📄the_tower_of_babil.txt
+│  │  │  │  │  ├─ 📄the_tower_of_zot.ts
+│  │  │  │  │  ├─ 📄the_tower_of_zot.txt
+│  │  │  │  │  ├─ 📄vanaspati.ts
+│  │  │  │  │  └─ 📄vanaspati.txt
+│  │  │  │  ├─ 📁hunts
+│  │  │  │  │  ├─ 📄elpis.ts
+│  │  │  │  │  ├─ 📄garlemald.ts
+│  │  │  │  │  ├─ 📄labyrinthos.ts
+│  │  │  │  │  ├─ 📄mare_lamentorum.ts
+│  │  │  │  │  ├─ 📄ss_rank.ts
+│  │  │  │  │  ├─ 📄thavnair.ts
+│  │  │  │  │  └─ 📄ultima_thule.ts
+│  │  │  │  ├─ 📁map
+│  │  │  │  │  ├─ 📄the_excitatron_6000.ts
+│  │  │  │  │  └─ 📄the_shifting_gymnasion_agonon.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄p10n.ts
+│  │  │  │  │  ├─ 📄p10n.txt
+│  │  │  │  │  ├─ 📄p10s.ts
+│  │  │  │  │  ├─ 📄p10s.txt
+│  │  │  │  │  ├─ 📄p11n.ts
+│  │  │  │  │  ├─ 📄p11n.txt
+│  │  │  │  │  ├─ 📄p11s.ts
+│  │  │  │  │  ├─ 📄p11s.txt
+│  │  │  │  │  ├─ 📄p12n.ts
+│  │  │  │  │  ├─ 📄p12n.txt
+│  │  │  │  │  ├─ 📄p12s.ts
+│  │  │  │  │  ├─ 📄p12s.txt
+│  │  │  │  │  ├─ 📄p1n.ts
+│  │  │  │  │  ├─ 📄p1n.txt
+│  │  │  │  │  ├─ 📄p1s.ts
+│  │  │  │  │  ├─ 📄p1s.txt
+│  │  │  │  │  ├─ 📄p2n.ts
+│  │  │  │  │  ├─ 📄p2n.txt
+│  │  │  │  │  ├─ 📄p2s.ts
+│  │  │  │  │  ├─ 📄p2s.txt
+│  │  │  │  │  ├─ 📄p3n.ts
+│  │  │  │  │  ├─ 📄p3n.txt
+│  │  │  │  │  ├─ 📄p3s.ts
+│  │  │  │  │  ├─ 📄p3s.txt
+│  │  │  │  │  ├─ 📄p4n.ts
+│  │  │  │  │  ├─ 📄p4n.txt
+│  │  │  │  │  ├─ 📄p4s.ts
+│  │  │  │  │  ├─ 📄p4s.txt
+│  │  │  │  │  ├─ 📄p5n.ts
+│  │  │  │  │  ├─ 📄p5n.txt
+│  │  │  │  │  ├─ 📄p5s.ts
+│  │  │  │  │  ├─ 📄p5s.txt
+│  │  │  │  │  ├─ 📄p6n.ts
+│  │  │  │  │  ├─ 📄p6n.txt
+│  │  │  │  │  ├─ 📄p6s.ts
+│  │  │  │  │  ├─ 📄p6s.txt
+│  │  │  │  │  ├─ 📄p7n.ts
+│  │  │  │  │  ├─ 📄p7n.txt
+│  │  │  │  │  ├─ 📄p7s.ts
+│  │  │  │  │  ├─ 📄p7s.txt
+│  │  │  │  │  ├─ 📄p8n.ts
+│  │  │  │  │  ├─ 📄p8n.txt
+│  │  │  │  │  ├─ 📄p8s.ts
+│  │  │  │  │  ├─ 📄p8s.txt
+│  │  │  │  │  ├─ 📄p9n.ts
+│  │  │  │  │  ├─ 📄p9n.txt
+│  │  │  │  │  ├─ 📄p9s.ts
+│  │  │  │  │  └─ 📄p9s.txt
+│  │  │  │  ├─ 📁trial
+│  │  │  │  │  ├─ 📄asura.ts
+│  │  │  │  │  ├─ 📄asura.txt
+│  │  │  │  │  ├─ 📄barbariccia-ex.ts
+│  │  │  │  │  ├─ 📄barbariccia-ex.txt
+│  │  │  │  │  ├─ 📄barbariccia.ts
+│  │  │  │  │  ├─ 📄barbariccia.txt
+│  │  │  │  │  ├─ 📄endsinger-ex.ts
+│  │  │  │  │  ├─ 📄endsinger-ex.txt
+│  │  │  │  │  ├─ 📄endsinger.ts
+│  │  │  │  │  ├─ 📄endsinger.txt
+│  │  │  │  │  ├─ 📄golbez-ex.ts
+│  │  │  │  │  ├─ 📄golbez-ex.txt
+│  │  │  │  │  ├─ 📄golbez.ts
+│  │  │  │  │  ├─ 📄golbez.txt
+│  │  │  │  │  ├─ 📄hydaelyn-ex.ts
+│  │  │  │  │  ├─ 📄hydaelyn-ex.txt
+│  │  │  │  │  ├─ 📄hydaelyn.ts
+│  │  │  │  │  ├─ 📄hydaelyn.txt
+│  │  │  │  │  ├─ 📄rubicante-ex.ts
+│  │  │  │  │  ├─ 📄rubicante-ex.txt
+│  │  │  │  │  ├─ 📄rubicante.ts
+│  │  │  │  │  ├─ 📄rubicante.txt
+│  │  │  │  │  ├─ 📄sephirot-un.ts
+│  │  │  │  │  ├─ 📄sephirot-un.txt
+│  │  │  │  │  ├─ 📄sophia-un.ts
+│  │  │  │  │  ├─ 📄sophia-un.txt
+│  │  │  │  │  ├─ 📄thordan-un.ts
+│  │  │  │  │  ├─ 📄thordan-un.txt
+│  │  │  │  │  ├─ 📄ultima-un.ts
+│  │  │  │  │  ├─ 📄ultima-un.txt
+│  │  │  │  │  ├─ 📄zeromus-ex.ts
+│  │  │  │  │  ├─ 📄zeromus-ex.txt
+│  │  │  │  │  ├─ 📄zeromus.ts
+│  │  │  │  │  ├─ 📄zeromus.txt
+│  │  │  │  │  ├─ 📄zodiark-ex.ts
+│  │  │  │  │  ├─ 📄zodiark-ex.txt
+│  │  │  │  │  ├─ 📄zodiark.ts
+│  │  │  │  │  ├─ 📄zodiark.txt
+│  │  │  │  │  ├─ 📄zurvan-un.ts
+│  │  │  │  │  └─ 📄zurvan-un.txt
+│  │  │  │  └─ 📁ultimate
+│  │  │  │     ├─ 📄dragonsongs_reprise_ultimate.ts
+│  │  │  │     ├─ 📄dragonsongs_reprise_ultimate.txt
+│  │  │  │     ├─ 📄the_omega_protocol.ts
+│  │  │  │     └─ 📄the_omega_protocol.txt
+│  │  │  ├─ 📁07-dt
+│  │  │  │  ├─ 📁alliance
+│  │  │  │  │  ├─ 📄cloud_of_darkness_chaotic.ts
+│  │  │  │  │  ├─ 📄cloud_of_darkness_chaotic.txt
+│  │  │  │  │  ├─ 📄jeuno-first-walk.ts
+│  │  │  │  │  └─ 📄jeuno-first-walk.txt
+│  │  │  │  ├─ 📁dungeon
+│  │  │  │  │  ├─ 📄alexandria.ts
+│  │  │  │  │  ├─ 📄alexandria.txt
+│  │  │  │  │  ├─ 📄ihuykatumu.ts
+│  │  │  │  │  ├─ 📄ihuykatumu.txt
+│  │  │  │  │  ├─ 📄origenics.ts
+│  │  │  │  │  ├─ 📄origenics.txt
+│  │  │  │  │  ├─ 📄skydeep-cenote.ts
+│  │  │  │  │  ├─ 📄skydeep-cenote.txt
+│  │  │  │  │  ├─ 📄strayborough-deadwalk.ts
+│  │  │  │  │  ├─ 📄strayborough-deadwalk.txt
+│  │  │  │  │  ├─ 📄vanguard.ts
+│  │  │  │  │  ├─ 📄vanguard.txt
+│  │  │  │  │  ├─ 📄worqor-zormor.ts
+│  │  │  │  │  ├─ 📄worqor-zormor.txt
+│  │  │  │  │  ├─ 📄yuweyawata.ts
+│  │  │  │  │  └─ 📄yuweyawata.txt
+│  │  │  │  ├─ 📁hunts
+│  │  │  │  │  ├─ 📄heritage_found.ts
+│  │  │  │  │  ├─ 📄kozamauka.ts
+│  │  │  │  │  ├─ 📄living_memory.ts
+│  │  │  │  │  ├─ 📄shaaloani.ts
+│  │  │  │  │  ├─ 📄ss_rank.ts
+│  │  │  │  │  ├─ 📄urqopacha.ts
+│  │  │  │  │  └─ 📄yaktel.ts
+│  │  │  │  ├─ 📁map
+│  │  │  │  │  └─ 📄cenote_ja_ja_gural.ts
+│  │  │  │  ├─ 📁raid
+│  │  │  │  │  ├─ 📄r1n.ts
+│  │  │  │  │  ├─ 📄r1n.txt
+│  │  │  │  │  ├─ 📄r1s.ts
+│  │  │  │  │  ├─ 📄r1s.txt
+│  │  │  │  │  ├─ 📄r2n.ts
+│  │  │  │  │  ├─ 📄r2n.txt
+│  │  │  │  │  ├─ 📄r2s.ts
+│  │  │  │  │  ├─ 📄r2s.txt
+│  │  │  │  │  ├─ 📄r3n.ts
+│  │  │  │  │  ├─ 📄r3n.txt
+│  │  │  │  │  ├─ 📄r3s.ts
+│  │  │  │  │  ├─ 📄r3s.txt
+│  │  │  │  │  ├─ 📄r4n.ts
+│  │  │  │  │  ├─ 📄r4n.txt
+│  │  │  │  │  ├─ 📄r4s.ts
+│  │  │  │  │  └─ 📄r4s.txt
+│  │  │  │  ├─ 📁trial
+│  │  │  │  │  ├─ 📄byakko-un.ts
+│  │  │  │  │  ├─ 📄byakko-un.txt
+│  │  │  │  │  ├─ 📄queen-eternal-ex.ts
+│  │  │  │  │  ├─ 📄queen-eternal-ex.txt
+│  │  │  │  │  ├─ 📄queen-eternal.ts
+│  │  │  │  │  ├─ 📄queen-eternal.txt
+│  │  │  │  │  ├─ 📄valigarmanda-ex.ts
+│  │  │  │  │  ├─ 📄valigarmanda-ex.txt
+│  │  │  │  │  ├─ 📄valigarmanda.ts
+│  │  │  │  │  ├─ 📄valigarmanda.txt
+│  │  │  │  │  ├─ 📄zoraal-ja-ex.ts
+│  │  │  │  │  ├─ 📄zoraal-ja-ex.txt
+│  │  │  │  │  ├─ 📄zoraal-ja.ts
+│  │  │  │  │  └─ 📄zoraal-ja.txt
+│  │  │  │  └─ 📁ultimate
+│  │  │  │     ├─ 📄futures_rewritten.ts
+│  │  │  │     └─ 📄futures_rewritten.txt
+│  │  │  └─ 📄raidboss_manifest.txt
+│  │  ├─ 📁emulator
+│  │  │  ├─ 📁data
+│  │  │  │  ├─ 📁network_log_converter
+│  │  │  │  │  ├─ 📄LineEvent.ts
+│  │  │  │  │  ├─ 📄LineEvent0x00.ts
+│  │  │  │  │  ├─ 📄LineEvent0x01.ts
+│  │  │  │  │  ├─ 📄LineEvent0x02.ts
+│  │  │  │  │  ├─ 📄LineEvent0x03.ts
+│  │  │  │  │  ├─ 📄LineEvent0x04.ts
+│  │  │  │  │  ├─ 📄LineEvent0x0C.ts
+│  │  │  │  │  ├─ 📄LineEvent0x105.ts
+│  │  │  │  │  ├─ 📄LineEvent0x14.ts
+│  │  │  │  │  ├─ 📄LineEvent0x15.ts
+│  │  │  │  │  ├─ 📄LineEvent0x16.ts
+│  │  │  │  │  ├─ 📄LineEvent0x17.ts
+│  │  │  │  │  ├─ 📄LineEvent0x18.ts
+│  │  │  │  │  ├─ 📄LineEvent0x19.ts
+│  │  │  │  │  ├─ 📄LineEvent0x1A.ts
+│  │  │  │  │  ├─ 📄LineEvent0x1B.ts
+│  │  │  │  │  ├─ 📄LineEvent0x1C.ts
+│  │  │  │  │  ├─ 📄LineEvent0x1D.ts
+│  │  │  │  │  ├─ 📄LineEvent0x1E.ts
+│  │  │  │  │  ├─ 📄LineEvent0x1F.ts
+│  │  │  │  │  ├─ 📄LineEvent0x22.ts
+│  │  │  │  │  ├─ 📄LineEvent0x23.ts
+│  │  │  │  │  ├─ 📄LineEvent0x24.ts
+│  │  │  │  │  ├─ 📄LineEvent0x25.ts
+│  │  │  │  │  ├─ 📄LineEvent0x26.ts
+│  │  │  │  │  ├─ 📄LineEvent0x27.ts
+│  │  │  │  │  ├─ 📄LineEvent0x28.ts
+│  │  │  │  │  ├─ 📄LineEvent0x29.ts
+│  │  │  │  │  ├─ 📄LineEventBlank.ts
+│  │  │  │  │  ├─ 📄LogRepository.ts
+│  │  │  │  │  └─ 📄ParseLine.ts
+│  │  │  │  ├─ 📄AnalyzedEncounter.ts
+│  │  │  │  ├─ 📄Combatant.ts
+│  │  │  │  ├─ 📄CombatantJobSearch.ts
+│  │  │  │  ├─ 📄CombatantState.ts
+│  │  │  │  ├─ 📄CombatantTracker.ts
+│  │  │  │  ├─ 📄Encounter.ts
+│  │  │  │  ├─ 📄LogEventHandler.ts
+│  │  │  │  ├─ 📄NetworkLogConverter.ts
+│  │  │  │  ├─ 📄NetworkLogConverter.worker.ts
+│  │  │  │  ├─ 📄Persistor.ts
+│  │  │  │  ├─ 📄PersistorEncounter.ts
+│  │  │  │  ├─ 📄PopupTextAnalysis.ts
+│  │  │  │  └─ 📄RaidEmulator.ts
+│  │  │  ├─ 📁overrides
+│  │  │  │  ├─ 📄RaidEmulatorAnalysisTimelineUI.ts
+│  │  │  │  ├─ 📄RaidEmulatorOverlayApiHook.ts
+│  │  │  │  ├─ 📄RaidEmulatorPopupText.ts
+│  │  │  │  ├─ 📄RaidEmulatorTimeline.ts
+│  │  │  │  ├─ 📄RaidEmulatorTimelineController.ts
+│  │  │  │  ├─ 📄RaidEmulatorTimelineUI.ts
+│  │  │  │  ├─ 📄RaidEmulatorWatchCombatantsOverride.ts
+│  │  │  │  └─ 📄StubbedPopupText.ts
+│  │  │  ├─ 📁ui
+│  │  │  │  ├─ 📄EmulatedPartyInfo.ts
+│  │  │  │  ├─ 📄EncounterTab.ts
+│  │  │  │  ├─ 📄ProgressBar.ts
+│  │  │  │  └─ 📄Tooltip.ts
+│  │  │  ├─ 📄EmulatorCommon.ts
+│  │  │  ├─ 📄EventBus.ts
+│  │  │  ├─ 📄Readme.md
+│  │  │  └─ 📄translations.ts
+│  │  ├─ 📁skins
+│  │  │  ├─ 📁dorgrin
+│  │  │  │  ├─ 📄Peace Sans LICENSE.txt
+│  │  │  │  ├─ 📄Peace Sans.otf
+│  │  │  │  ├─ 📄Readme.md
+│  │  │  │  └─ 📄dorgrin.css
+│  │  │  ├─ 📁jwidea
+│  │  │  │  └─ 📄jwidea.css
+│  │  │  └─ 📁lippe
+│  │  │     └─ 📄lippe.css
+│  │  ├─ 📁test
+│  │  │  └─ 📄dragon_test.ts
+│  │  ├─ 📄autoplay_helper.ts
+│  │  ├─ 📄browser_tts_engine.ts
+│  │  ├─ 📄common_replacement.ts
+│  │  ├─ 📄html_timeline_ui.ts
+│  │  ├─ 📄popup-text.ts
+│  │  ├─ 📄raidboss.css
+│  │  ├─ 📄raidboss.html
+│  │  ├─ 📄raidboss.ts
+│  │  ├─ 📄raidboss_alerts_only.html
+│  │  ├─ 📄raidboss_config.ts
+│  │  ├─ 📄raidboss_options.ts
+│  │  ├─ 📄raidboss_silent.html
+│  │  ├─ 📄raidboss_timeline_only.html
+│  │  ├─ 📄raidemulator.css
+│  │  ├─ 📄raidemulator.html
+│  │  ├─ 📄raidemulator.ts
+│  │  ├─ 📄timeline.ts
+│  │  └─ 📄timeline_parser.ts
+│  └─ 📁test
+│     ├─ 📄test.html
+│     ├─ 📄test.ts
+│     ├─ 📄timerbar_test.html
+│     └─ 📄timerbar_test.ts
+├─ 📁user
+├─ 📁util
+│  ├─ 📁coverage
+│  │  ├─ 📄coverage.css
+│  │  ├─ 📄coverage.d.ts
+│  │  ├─ 📄coverage.html
+│  │  ├─ 📄coverage.ts
+│  │  ├─ 📄coverage_report.ts
+│  │  ├─ 📄missing_translations_cn.html
+│  │  ├─ 📄missing_translations_de.html
+│  │  ├─ 📄missing_translations_fr.html
+│  │  ├─ 📄missing_translations_ja.html
+│  │  └─ 📄missing_translations_ko.html
+│  ├─ 📁logtools
+│  │  ├─ 📄anonymizer.ts
+│  │  ├─ 📄arg_parser.ts
+│  │  ├─ 📄encounter_printer.ts
+│  │  ├─ 📄encounter_tools.ts
+│  │  ├─ 📄fake_name_generator.ts
+│  │  ├─ 📄fflogs.ts
+│  │  ├─ 📄generate_triggers.ts
+│  │  ├─ 📄make_timeline.ts
+│  │  ├─ 📄notifier.ts
+│  │  ├─ 📄split_log.ts
+│  │  ├─ 📄splitter.css
+│  │  ├─ 📄splitter.html
+│  │  ├─ 📄splitter.ts
+│  │  ├─ 📄test_timeline.ts
+│  │  └─ 📄web_splitter.ts
+│  ├─ 📄DEPS.json5
+│  ├─ 📄README.md
+│  ├─ 📄bump_version.ts
+│  ├─ 📄console_logger.ts
+│  ├─ 📄csv_util.ts
+│  ├─ 📄do_release.ts
+│  ├─ 📄example_log_lines.ts
+│  ├─ 📄fetch_deps.ts
+│  ├─ 📄file_utils.ts
+│  ├─ 📄find_missing_timeline_translations.ts
+│  ├─ 📄find_missing_translations.ts
+│  ├─ 📄find_missing_translations_action.ts
+│  ├─ 📄gen_coverage_report.ts
+│  ├─ 📄gen_effect_id.ts
+│  ├─ 📄gen_hunt_data.ts
+│  ├─ 📄gen_log_guide.ts
+│  ├─ 📄gen_pet_names.ts
+│  ├─ 📄gen_weather_rate.ts
+│  ├─ 📄gen_world_ids.ts
+│  ├─ 📄gen_zone_id_and_info.ts
+│  ├─ 📄generate_data_files.ts
+│  ├─ 📄index.ts
+│  ├─ 📄manifest.ts
+│  ├─ 📄process_triggers_folder.ts
+│  ├─ 📄publish.sh
+│  ├─ 📄query_xivapi.ts
+│  ├─ 📄sync_files.ts
+│  ├─ 📄translate_timeline.ts
+│  ├─ 📄update_logdefs.ts
+│  ├─ 📄validate_versions.ts
+│  ├─ 📄xivapi.ts
+│  └─ 📄zone_overrides.ts
+├─ 📁webpack
+│  ├─ 📁loaders
+│  │  └─ 📄manifest-loader.ts
+│  ├─ 📄constants.ts
+│  ├─ 📄webpack.config.ts
+│  ├─ 📄webpack.dev.ts
+│  ├─ 📄webpack.ghpages.ts
+│  └─ 📄webpack.prod.ts
+├─ 📄.editorconfig
+├─ 📄.eslintrc.cjs
+├─ 📄.gitattributes
+├─ 📄.gitignore
+├─ 📄.markdownlint.yml
+├─ 📄.mocharc.cjs
+├─ 📄.npmrc
+├─ 📄.yamllint.yml
+├─ 📄CODE_OF_CONDUCT.md
+├─ 📄CONTRIBUTING.md
+├─ 📄LICENSE
+├─ 📄README.md
+├─ 📄dprint.json
+├─ 📄package-lock.json
+├─ 📄package.json
+├─ 📄requirements.txt
+├─ 📄tsconfig.eslint.json
+├─ 📄tsconfig.json
+├─ 📄tsconfig.node.json
+├─ 📄tsconfig.npm.json
+└─ 📄tsconfig.webpack.json
+```

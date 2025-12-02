@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:aia_wallet_test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MySQL
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+app:
+  sftp:
+    host: localhost
+    port: 22
+    username: test
+    password: test
+    remote-dir: /remote
+    download-dir: /tmp/download
+    backup-dir: /backup
+  batch:
+    enabled: false

@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: aia-wallet-backend
+  datasource:
+    # Default to MySQL for local dev, can be overridden
+    url: ${DB_URL:jdbc:mysql://localhost:3306/aia_wallet?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:password}
+    driver-class-name: ${DB_DRIVER:com.mysql.cj.jdbc.Driver}
+  sql:
+    init:
+      mode: always
+      platform: mysql
+
+# Custom configuration for SFTP and Scheduling
+app:
+  sftp:
+    host: ${SFTP_HOST:localhost}
+    port: ${SFTP_PORT:22}
+    username: ${SFTP_USERNAME:user}
+    password: ${SFTP_PASSWORD:pass}
+    remote-dir: ${SFTP_REMOTE_DIR:/upload}
+    download-dir: ${SFTP_DOWNLOAD_DIR:/tmp/aia-wallet/downloads}
+    backup-dir: ${SFTP_BACKUP_DIR:/backup}
+  batch:
+    enabled: ${BATCH_ENABLED:true}
+    cutoff-time: "17:00"
+    run-time: "18:00"
