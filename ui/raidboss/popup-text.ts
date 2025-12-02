@@ -603,7 +603,7 @@ export class PopupText {
     this.displayLang = this.options.AlertsLanguage ?? this.options.DisplayLanguage ??
       this.options.ParserLanguage ?? 'en';
 
-    if (this.options.IsRemoteRaidboss) {
+    if (!this._isWindows() || this.options.IsRemoteRaidboss) {
       this.ttsEngine = new BrowserTTSEngine(this.displayLang);
       this.ttsSay = (text) => {
         this.ttsEngine?.play(this.options.TransformTts(text));
@@ -1760,6 +1760,14 @@ export class PopupText {
     }
 
     return { ...triggerData, ...data };
+  }
+
+  _isWindows(): boolean{
+    if(navigator.userAgent.indexOf("Windows") != -1){
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
